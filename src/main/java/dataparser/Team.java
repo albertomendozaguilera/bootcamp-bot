@@ -6,7 +6,7 @@ public class Team {
 
 	private int id;
 	private String name;
-	private List<Activity> activities;
+	private List<Activity> actividades;
 
 	public int getId() {
 		return id;
@@ -24,28 +24,28 @@ public class Team {
 		this.name = name;
 	}
 
-	public List<Activity> getActivities() {
-		return activities;
+	public List<Activity> getactividades() {
+		return actividades;
 	}
 
 	public Activity getActivityByIndex(int id) {
-		return activities.get(id);
+		return actividades.get(id);
 	}
 
-	public void setActivities(List<Activity> activities) {
-		this.activities = activities;
+	public void setactividades(List<Activity> actividades) {
+		this.actividades = actividades;
 	}
 
 	public int getTotalPoints() {
 		int points = 0;
-		for (int i = 0; i < activities.size(); i++) {
-			points += activities.get(i).getPoints();
+		for (int i = 0; i < actividades.size(); i++) {
+			points += actividades.get(i).getPoints();
 		}
 		return points;
 	}
 
 	@Override
 	public String toString() {
-		return "{" + "id='" + id + '\'' + ", name='" + name + '\'' + ", activities=" + activities + '}';
+		return "{" + "id='" + id + '\'' + ", name='" + name + '\'' + ", actividades=" + actividades + '}';
 	}
 }
