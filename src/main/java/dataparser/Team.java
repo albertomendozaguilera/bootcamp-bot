@@ -37,11 +37,11 @@ public class Team {
 	}
 
 	public int getTotalPoints() {
-		int points = 0;
+		int puntos = 0;
 		for (int i = 0; i < actividades.size(); i++) {
-			points += actividades.get(i).getPoints();
+			puntos += actividades.get(i).getPoints();
 		}
-		return points;
+		return puntos;
 	}
 
 	@Override

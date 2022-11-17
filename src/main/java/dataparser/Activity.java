@@ -3,7 +3,7 @@ package dataparser;
 public class Activity {
 
 	private String name;
-    private int points;
+    private int puntos;
     
 	public String getName() {
 		return name;
@@ -12,10 +12,10 @@ public class Activity {
 		this.name = name;
 	}
 	public int getPoints() {
-		return points;
+		return puntos;
 	}
-	public void setPoints(int points) {
-		this.points = points;
+	public void setPoints(int puntos) {
+		this.puntos = puntos;
 	}
 	    
 }
