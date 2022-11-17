@@ -18,21 +18,21 @@ public abstract class TeamDataParser {
 			
 			ArrayList<Team> winnerTeamList = new ArrayList<Team>();
 			for (Team team : teams.getTeamdata()) {
-				if (team.getTotalPoints() > bestScore) {
+				if (team.getTotalPuntos() > bestScore) {
 					winnerTeamList.clear();
 					winnerTeamList.add(team);
-					bestScore = team.getTotalPoints();
-				} else if (team.getTotalPoints() == bestScore){
+					bestScore = team.getTotalPuntos();
+				} else if (team.getTotalPuntos() == bestScore){
 					winnerTeamList.add(team);
 				}
 			}
 			
 			if (winnerTeamList.size()>1) {
 				for (Team team : winnerTeamList) {
-					winnerTeams = winnerTeams + "%0A - " + team.getName() + " - puntuacion: " + team.getTotalPoints();
+					winnerTeams = winnerTeams + "%0A - " + team.getName() + " - puntuacion: " + team.getTotalPuntos();
 				}
 			}else {
-				winnerTeams = "El equipo ganador es: " + winnerTeamList.get(0).getName() + " - puntuacion: " + winnerTeamList.get(0).getTotalPoints();
+				winnerTeams = "El equipo ganador es: " + winnerTeamList.get(0).getName() + " - puntuacion: " + winnerTeamList.get(0).getTotalPuntos();
 			}
 			
 		} catch (IOException e) {

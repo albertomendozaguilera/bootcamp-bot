@@ -36,10 +36,10 @@ public class Team {
 		this.actividades = actividades;
 	}
 
-	public int getTotalPoints() {
+	public int getTotalPuntos() {
 		int puntos = 0;
 		for (int i = 0; i < actividades.size(); i++) {
-			puntos += actividades.get(i).getPoints();
+			puntos += actividades.get(i).getPuntos();
 		}
 		return puntos;
 	}

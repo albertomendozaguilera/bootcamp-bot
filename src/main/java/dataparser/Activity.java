@@ -11,10 +11,10 @@ public class Activity {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getPoints() {
+	public int getPuntos() {
 		return puntos;
 	}
-	public void setPoints(int puntos) {
+	public void setPuntos(int puntos) {
 		this.puntos = puntos;
 	}
 	    
