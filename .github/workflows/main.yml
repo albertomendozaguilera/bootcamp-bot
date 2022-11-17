@@ -8,4 +8,4 @@ jobs:
         with:
           fetch-depth: 2
       - name: Execute telegram script
-        run: ./scripts/sendJsonToApi.sh
+        run: ./src/scripts/sendJsonToApi.sh
